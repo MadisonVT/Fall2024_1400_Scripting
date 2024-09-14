@@ -14,10 +14,10 @@ public class TransformController : MonoBehaviour
     void Update()
     {
         //Moves GameObject
-        var x = Mathf.PingPong(Time.time, 3);
-        var p = new Vector3(0, x, 0);
+        var x = Mathf.PingPong(Time.time, 1);
+        var p = new Vector3(0, 0, x);
         transform.position = p;
         //Rotates GameObject
-        transform.Rotate(new Vector3(0, 30, 0) * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, 30) * Time.deltaTime);
     }
 }
